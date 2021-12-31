@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1.0 , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="measure.css">
+    <script src="https://kit.fontawesome.com/8145e8cf22.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Measure Conversor</h1>
+
+    <div class="main-card">
+        <h2>Convert measures. Make it easy!</h2>
+        <div class="wrapper-inputs">
+            <div class="div-select-inputs">
+                <select name="input-select" id="input-select">
+                    <option value="#" selected>Select unit...</option>
+                    <option value="Km">Km</option>
+                    <option value="m">m</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                </select>
+                <input type="number" id="input-value" name="input-value" placeholder="Ex: 123.5">
+                <p>Input value</p>
+            </div>
+
+            <div class="select1">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+
+            <div class="div-select-inputs">
+                <select name="output-select" id="output-select">
+                    <option value="#" selected>Select unit...</option>
+                    <option value="Km">Km</option>
+                    <option value="m">m</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                </select>
+                <input type="number" readonly id="output-value" name="output-value">
+                <p>Output value</p>
+            </div>
+        </div>
+        <input type="button" class="button" name="button" value="Calculate" onclick="convertion()">
+    </div>           
+
+    <footer>
+        &copy; Ortiz
+    </footer>
+
+
+    <script src="measure.js"></script>
+</body>
+</html>
+
